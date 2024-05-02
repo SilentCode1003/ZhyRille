@@ -164,6 +164,15 @@ body {
   .footer-container .section {
     margin: 5px 0;
   }
+
+  /* Booking form */
+  .card-container {
+    grid-template-columns: 100%;
+    width: 100vw;
+  }
+  .card-img {
+    height: 350px;
+  }
 }
 
 @media (max-width: 600px) {

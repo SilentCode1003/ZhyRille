@@ -12,7 +12,7 @@ const About = () => {
         <img
           src={massage}
           alt="oil massage"
-          className="max-w-full h-auto rounded-xl mt-14 border-2 border-solid border-yellow-500"
+          className="max-w-full h-auto rounded-xl mt-14 border-2 border-solid border-amber-50"
         />
       </div>
 
