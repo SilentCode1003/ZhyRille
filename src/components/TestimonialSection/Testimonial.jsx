@@ -14,7 +14,7 @@ const Testimonial = () => {
           </h1>
         </section>
 
-        <TECarousel showControls ride="carousel">
+        {/* <TECarousel showControls ride="carousel">
           <div className="relative w-3/4 overflow-hidden after:clear-both after:block after:content-[''] mx-auto">
             <TECarouselItem
               itemID={1}
@@ -56,7 +56,7 @@ const Testimonial = () => {
               </p>
             </TECarouselItem>
           </div>
-        </TECarousel>
+        </TECarousel> */}
       </div>
     </div>
   );
