@@ -1,5 +1,5 @@
 import React from "react";
-import zhyMessage from "../../assets/zhy.png";
+import zhyMessage from "/assets/zhy.png";
 
 const Message = () => {
   return (

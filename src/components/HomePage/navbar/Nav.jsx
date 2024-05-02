@@ -3,7 +3,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-scroll";
 import AOS from "aos";
 import "aos/dist/aos.cjs";
-import logo from "../../../assets/png.png";
+import logo from "/assets/png.png";
 
 const Nav = () => {
   let Links = [

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import massage from "../../assets/oilbased.jpg";
+import massage from "/assets/oilbased.jpg";
 
 const About = () => {
   return (
