@@ -6,37 +6,37 @@ import {
   TEModalContent,
   TEModalHeader,
 } from "tw-elements-react";
-import BookForm from "./BookForm";
 
-const BookModal = () => {
-  const [showModal, setShowModal] = useState(false);
+import AboutModalcontent from "./AboutModalcontent";
+
+const AboutModal = () => {
+  const [showModalLg, setShowModalLg] = useState(false);
   return (
     <div>
-      {/* <!-- Button trigger modal --> */}
       <TERipple rippleColor="white">
         <button
           type="button"
-          className="btn inline-block py-3 px-10 text-sm font-semibold border-2 border-solid border-transparent rounded-md transition-all duration-200 ease-in cursor-pointer bg-amber-50 text-black capitalize hover:translate-x-3 hover:border-2 hover:border-solid hover:border-amber-50 hover:bg-transparent hover:text-amber-50"
-          onClick={() => setShowModal(true)}
+          className="btn inline-block py-2.5 px-8 text-xs font-semibold border-2 border-solid border-transparent rounded-md transition-all duration-200 ease-in cursor-pointer bg-amber-50 text-black capitalize hover:translate-x-3 hover:border-2 hover:border-solid hover:border-amber-50 hover:bg-transparent hover:text-amber-50"
+          onClick={() => setShowModalLg(true)}
         >
-          book now
+          read more
         </button>
       </TERipple>
 
-      {/* <!-- Modal --> */}
-      <TEModal show={showModal} setShow={setShowModal}>
-        <TEModalDialog size="lg" centered>
+      {/* <!--Large modal-->*/}
+      <TEModal show={showModalLg} setShow={setShowModalLg} scrollable>
+        <TEModalDialog size="xl" centered>
           <TEModalContent>
-            <TEModalHeader className="bg-stone-950 py-3 border-t-2 border-l-2 border-r-2 border-amber-50 border-solid">
+            <TEModalHeader className="bg-stone-950 py-0 border-t-2 border-l-2 border-r-2 border-amber-50 border-solid">
               {/* <!--Modal title--> */}
-              <h5 className="text-xl font-medium leading-normal text-amber-50">
-                ZhyRille Booking
+              <h5 className="text-xl font-medium leading-normal text-amber-50 dark:text-neutral-200">
+                ...
               </h5>
               {/* <!--Close button--> */}
               <button
                 type="button"
                 className="text-amber-50 box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
-                onClick={() => setShowModal(false)}
+                onClick={() => setShowModalLg(false)}
                 aria-label="Close"
               >
                 <svg
@@ -55,8 +55,8 @@ const BookModal = () => {
                 </svg>
               </button>
             </TEModalHeader>
-            {/* Booking Form */}
-            <BookForm />
+            {/* <!--Modal body--> */}
+            <AboutModalcontent />
           </TEModalContent>
         </TEModalDialog>
       </TEModal>
@@ -64,4 +64,4 @@ const BookModal = () => {
   );
 };
 
-export default BookModal;
+export default AboutModal;

@@ -7,6 +7,7 @@ import Footer from "./components/FooterSection/Footer";
 import Map from "./components/FooterSection/Map";
 import Message from "./components/MessageSection/Message";
 import Treatments from "./components/Modal/Treatments";
+import AboutModal from "./components/AboutSection/AboutModal";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
       <Message />
       <Map />
       <Footer />
+
+      {/* <AboutModal /> */}
     </>
   );
 }

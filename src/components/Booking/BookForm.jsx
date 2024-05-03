@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 import zhy from "../../assets/back massage.jpg";
 
@@ -15,6 +17,8 @@ const BookForm = () => {
     borderBottomWidth: "2px",
     borderBottomColor: "#fffbeb",
   };
+
+  const [startDate, setStartDate] = useState(null);
   return (
     <div className="card-container grid grid-cols-2 border-solid border-y-2 bg-stone-950 border-amber-50">
       {/* Booking img */}
@@ -28,37 +32,20 @@ const BookForm = () => {
         </h3>
         <form>
           <div className="form-row flex w-11/12 my-auto mx-auto pt-5">
-            <select
-              className="block w-full my-4 mx-3 p-1 text-sm outline-none  font-light text-gray-400 bg-stone-950"
-              name="days"
-              style={underline}
-            >
-              <option value="day-select">Select Day</option>
-              <option value="day-select" className="text-amber-50">
-                Sunday
-              </option>
-              <option value="day-select" className="text-amber-50">
-                Monday
-              </option>
-              <option value="day-select" className="text-amber-50">
-                Tuesday
-              </option>
-              <option value="day-select" className="text-amber-50">
-                Wednesday
-              </option>
-              <option value="day-select" className="text-amber-50">
-                Thursday
-              </option>
-              <option value="day-select" className="text-amber-50">
-                Friday
-              </option>
-            </select>
+            <DatePicker
+              className="block w-full my-4 mx-3 p-1 text-sm outline-none font-light text-gray-400 bg-stone-950"
+              selected={startDate} // Pass the selected date as a state
+              onChange={(date) => setStartDate(date)} // Handle date changes
+              dateFormat="MMMM d, yyyy" // Date format
+              placeholderText="Select Date"
+            />
+
             <select
               className="block w-full my-4 mx-3 p-1 text-sm outline-none  font-light text-gray-400 bg-stone-950"
               name="hours"
               style={underline}
             >
-              <option value="hour-select">Select Hour</option>
+              <option value="hour-select">Select Time</option>
               <option value="10" className="text-amber-50">
                 09:00
               </option>

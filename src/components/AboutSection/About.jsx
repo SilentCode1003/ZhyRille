@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import massage from "../../assets/oilbased.jpg";
+import AboutModal from "./AboutModal";
 
 const About = () => {
   return (
@@ -28,13 +29,8 @@ const About = () => {
           eum vitae dolorum aliquam veniam tempora, asperiores dolorem
           voluptates reprehenderit rem totam blanditiis, sequi labore!
         </p>
-
-        <a
-          href="#"
-          className="btn inline-block py-2.5 px-8 text-xs font-semibold border-2 border-solid border-transparent rounded-md transition-all duration-200 ease-in cursor-pointer bg-amber-50 text-black capitalize hover:translate-x-3 hover:border-2 hover:border-solid hover:border-amber-50 hover:bg-transparent hover:text-amber-50"
-        >
-          Read More
-        </a>
+        {/* About Content */}
+        <AboutModal />
       </div>
     </section>
   );

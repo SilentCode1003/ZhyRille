@@ -21,6 +21,12 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+.date-picker-wrapper .react-datepicker-wrapper input {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #fffbeb;
+}
+
 body {
   /* color: #fdf4db; */
   background: #0c0a09;
@@ -78,6 +84,11 @@ body {
 
   .home {
     height: 90vh;
+  }
+
+  /* Treatments */
+  .tour-content {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -168,10 +179,16 @@ body {
   /* Booking form */
   .card-container {
     grid-template-columns: 100%;
-    width: 100vw;
+    width: 100%;
   }
   .card-img {
     height: 350px;
+  }
+
+  /* treatments */
+  .tour-content {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
   }
 }
 
