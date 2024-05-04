@@ -38,14 +38,16 @@ const BookForm = () => {
               onChange={(date) => setStartDate(date)} // Handle date changes
               dateFormat="MMMM d, yyyy" // Date format
               placeholderText="Select Date"
+              required
             />
 
             <select
               className="block w-full my-4 mx-3 p-1 text-sm outline-none  font-light text-gray-400 bg-stone-950"
               name="hours"
               style={underline}
+              required
             >
-              <option value="hour-select">Select Time</option>
+              <option value="">Select Time</option>
               <option value="10" className="text-amber-50">
                 09:00
               </option>
@@ -75,12 +77,14 @@ const BookForm = () => {
               placeholder="Full Name"
               className="block w-full my-4 mx-3 p-1 text-sm outline-none border-none border-b-2 border-white font-light text-amber-50 bg-stone-950"
               style={underline}
+              required
             />
             <input
               type="text"
               placeholder="Phone Number"
               className="block w-full my-4 mx-3 p-1 text-sm outline-none border-none border-b-2 border-white font-light text-amber-50 bg-stone-950"
               style={underline}
+              required
             />
           </div>
           <div className="form-row flex w-11/12 my-auto mx-auto pt-5">
@@ -90,6 +94,7 @@ const BookForm = () => {
               min="1"
               className="block w-full my-1 mx-3 p-1 text-sm outline-none border-none border-b-2 border-white font-light text-amber-50 bg-stone-950"
               style={underline}
+              required
             />
             <input
               type="submit"

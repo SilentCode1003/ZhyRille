@@ -5,6 +5,7 @@ import {
   TEModalDialog,
   TEModalContent,
   TEModalHeader,
+  TEModalBody,
 } from "tw-elements-react";
 
 import AboutModalcontent from "./AboutModalcontent";
@@ -24,8 +25,13 @@ const AboutModal = () => {
       </TERipple>
 
       {/* <!--Large modal-->*/}
-      <TEModal show={showModalLg} setShow={setShowModalLg} scrollable>
-        <TEModalDialog size="xl" centered>
+      <TEModal
+        show={showModalLg}
+        setShow={setShowModalLg}
+        className="about-modal"
+        scrollable
+      >
+        <TEModalDialog size="xl">
           <TEModalContent>
             <TEModalHeader className="bg-stone-950 py-0 border-t-2 border-l-2 border-r-2 border-amber-50 border-solid">
               {/* <!--Modal title--> */}
@@ -56,7 +62,9 @@ const AboutModal = () => {
               </button>
             </TEModalHeader>
             {/* <!--Modal body--> */}
-            <AboutModalcontent />
+            <TEModalBody className="bg-stone-950 border-solid boder-2 border-amber-50">
+              <AboutModalcontent />
+            </TEModalBody>
           </TEModalContent>
         </TEModalDialog>
       </TEModal>

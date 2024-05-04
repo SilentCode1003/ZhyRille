@@ -4,11 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import BookModal from "../../Booking/BookModal";
 
-const HomeSection = ({ img }) => {
-  const red = {
-    background: "#FF0000",
-  };
-
+const HomeSection = () => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -22,7 +18,12 @@ const HomeSection = ({ img }) => {
         <img
           src={ZhyRille}
           alt="image"
-          className="img mt-20 flex items-center justify-center h-96 w-[600px]"
+          className="img mt-20 flex items-center justify-center h-[420px] w-[650px]"
+          data-aos="fade-right"
+          data-aos-duration="600"
+          data-aos-easing="ease-in-out"
+          data-aos-once="true"
+          data-aos-delay="400"
         />
         <div className="center-btn text-center mt-16">
           <BookModal />

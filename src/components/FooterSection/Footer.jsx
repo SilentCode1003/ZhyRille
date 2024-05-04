@@ -1,48 +1,94 @@
-import React from "react";
-// import {
-//   FaFacebookSquare,
-//   FaInstagramSquare,
-//   FaEnvelope,
-//   FaPhoneAlt,
-//   FaMapMarketAlt,
-// } from "react-icons/fa";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import {
+  FaFacebookSquare,
+  FaTwitterSquare,
+  FaInstagramSquare,
+  FaEnvelope,
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <footer id="contacts" className="footer bottom-0 w-full bg-stone-950">
+    <footer
+      id="contacts"
+      className="footer bottom-0 w-full bg-stone-950"
+      data-aos="fade-right"
+      data-aos-duration="600"
+      data-aos-easing="ease-in-out"
+      data-aos-once="true"
+      data-aos-delay="400"
+    >
       <div className="footer-container flex p-12 my-0 mx-">
         <div className="left section basis-1/2 py-0 px-5">
           <h2 className="text-lg text-amber-50 font-semibold">About Us</h2>
           <div className="footer-content mt-5 relative before:absolute before:content-[''] before:h-[2px] before:-top-2.5 before:w-full after:absolute after:content-[''] after:h-[2px] after:-top-2.5 after:w-[15%] after:bg-yellow-500">
-            <p className="text-sm text-amber-50">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              omnis possimus ex quidem sunt perspiciatis repellat, aperiam
-              veritatis totam culpa.
+            <p className="text-sm text-amber-50 pt-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              ducimus a animi temporibus, omnis voluptas sint. Delectus
+              quibusdam at voluptatem error vel aliquam provident alias enim
+              beatae, sunt dolores modi, doloremque amet quae earum rem
+              cupiditate ad neque asperiores atque?
             </p>
+            <div className="social mt-5 flex">
+              <a href="#" className="py-0 ">
+                <FaFacebookSquare
+                  size={25}
+                  className=" bg-amber-50 leading-10 text-center text-lg rounded-md transition duration-300 hover:bg-yellow-500"
+                />
+              </a>
+              <a href="#" className="py-0 px-4">
+                <FaTwitterSquare
+                  size={25}
+                  className=" bg-amber-50 leading-10 text-center text-lg rounded-md transition duration-300 hover:bg-yellow-500"
+                />
+              </a>
+              <a href="#" className="py-0 ">
+                <FaInstagramSquare
+                  size={25}
+                  className=" bg-amber-50 leading-10 text-center text-lg rounded-md transition duration-300 hover:bg-yellow-500"
+                />
+              </a>
+            </div>
           </div>
         </div>
 
         <div className="center section basis-1/2 py-0 px-5">
           <h2 className="text-lg text-amber-50 font-semibold">Contact Us</h2>
           <div className="footer-content mt-5 relative before:absolute before:content-[''] before:h-[2px] before:-top-2.5 before:w-full after:absolute after:content-[''] after:h-[2px] after:-top-2.5 after:w-[15%] after:bg-yellow-500">
-            <div className="place">
-              <span className="Icon"></span>
-              <span className="text text-sm text-amber-50 font-medium pl-2.5">
-                New York, USA
+            <div className="place flex items-center pt-3">
+              <FaMapMarkerAlt
+                size={23}
+                className="text-amber-50 leading-10 text-center rounded-md transition duration-300 cursor-pointer"
+              />
+              <span className="text text-sm text-amber-50 pl-3 font-medium">
+                Put your Address, here
               </span>
             </div>
 
-            <div className="phone my-4 mx-0">
-              <span className="Icon"></span>
-              <span className="text text-sm text-amber-50 font-medium pl-2.5">
-                +09123123123
+            <div className="phone my-9 mx-0 flex items-center">
+              <FaPhoneAlt
+                size={23}
+                className="text-amber-50 leading-10 text-center rounded-md transition duration-300 cursor-pointer"
+              />
+              <span className="text text-sm text-amber-50 pl-3 font-medium">
+                123-123-1234
               </span>
             </div>
 
-            <div className="email">
-              <span className="Icon"></span>
-              <span className="text text-sm text-amber-50 font-medium pl-2.5">
-                contact@example.com
+            <div className="email flex items-center">
+              <FaEnvelope
+                size={23}
+                className="text-amber-50 leading-10 text-center rounded-md transition duration-300 cursor-pointer"
+              />
+              <span className="text text-sm text-amber-50 pl-3 font-medium">
+                sampleEmail@email.com
               </span>
             </div>
           </div>
@@ -51,7 +97,7 @@ const Footer = () => {
         <div className="right section basis-1/2 py-0 px-5">
           <h2 className="text-lg text-amber-50 font-semibold">Subscribe</h2>
           <div className="footer-content mt-5 relative before:absolute before:content-[''] before:h-[2px] before:-top-2.5 before:w-full after:absolute after:content-[''] after:h-[2px] after:-top-2.5 after:w-[15%] after:bg-yellow-500">
-            <form action="#">
+            <form action="#" className="pt-2">
               <div className="email">
                 <div className="text text-sm text-amber-50 mb-[2px]">Email</div>
               </div>
