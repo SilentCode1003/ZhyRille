@@ -11,7 +11,7 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Poppins";
 }
 
 /* removes arrow keys input number */
@@ -21,15 +21,18 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+/* react-datepicker */
+.date-picker-wrapper .react-datepicker-wrapper input {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #fffbeb;
+}
+
 body {
-  /* color: #fdf4db; */
   background: #0c0a09;
 }
 
-/* .tour-content {
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-} */
-
+/* media query */
 @media (max-width: 1700px) {
   header {
     padding: 18px 8%;
@@ -79,6 +82,28 @@ body {
   .home {
     height: 90vh;
   }
+
+  /* about modal */
+  .about-title {
+    font-size: 30px;
+    margin-top: 150px;
+    /* margin-bottom: -5px; */
+  }
+
+  .about-content {
+    font-size: 15px;
+  }
+
+  .about-img {
+    height: 400px;
+    width: 510px;
+    margin: 50px auto;
+  }
+
+  /* Treatments */
+  .tour-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 1050px) {
@@ -125,6 +150,34 @@ body {
   .navbar.open {
     left: 0;
   }
+
+  /* booking modal */
+  .book-modal {
+    padding: 80px 20px;
+  }
+
+  /* about modal */
+  .about {
+    margin-top: 50px;
+  }
+  .about-title {
+    font-size: 27px;
+  }
+
+  .about-content {
+    font-size: 13px;
+  }
+
+  .about-img {
+    height: 400px;
+    width: 500px;
+  }
+
+  /* testimonial section */
+  section.header h1 {
+    margin-left: -10px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 800px) {
@@ -138,6 +191,12 @@ body {
 
   .newsletter-content {
     grid-template-columns: 1fr;
+  }
+
+  /* About homepage */
+  .holiday .left-img {
+    margin-top: 15px;
+    margin-bottom: -50px;
   }
 
   /* Footer */
@@ -164,6 +223,43 @@ body {
   .footer-container .section {
     margin: 5px 0;
   }
+
+  /* booking modal */
+  .book-modal {
+    padding: 80px 20px;
+  }
+
+  /* Booking form */
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  .card-img {
+    height: 350px;
+  }
+
+  /* treatments */
+  .tour-content {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+
+  /* testimonial section */
+  section.header h1 {
+    margin-left: -10px;
+    text-align: center;
+  }
+
+  /* Message Section */
+  .contact-form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+
+  .contact-form img {
+    margin: 0 50px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -179,6 +275,33 @@ body {
   .home img {
     height: 250px;
     width: 400px;
+  }
+
+  /* about modal */
+  .about-title {
+    margin-top: 150px;
+    margin-left: 25px;
+  }
+
+  .about-content {
+    margin: 0 25px;
+  }
+
+  .about-img {
+    height: 400px;
+    width: 455px;
+    margin: 50px auto;
+  }
+
+  /* testimonial section */
+  section.header h1 {
+    margin-left: -30px;
+    text-align: center;
+  }
+
+  /* Message section */
+  .contact-form img {
+    margin: 0 1px;
   }
 }
 
@@ -198,5 +321,27 @@ body {
 
   section {
     padding: 60px 3% 50px;
+  }
+
+  /* about modal */
+  .about-title {
+    margin-top: 150px;
+    margin-left: 30px;
+  }
+
+  .about-content {
+    margin: 0 30px;
+  }
+
+  .about-img {
+    height: 400px;
+    width: 445px;
+    margin: 50px auto;
+  }
+
+  /* testimonial section */
+  section.header h1 {
+    margin-left: -20px;
+    text-align: center;
   }
 }

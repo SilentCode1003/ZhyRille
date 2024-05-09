@@ -2,12 +2,9 @@ import React, { useEffect } from "react";
 import ZhyRille from "/assets/logo.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import BookModal from "../../Booking/BookModal";
 
-const HomeSection = ({ img }) => {
-  const red = {
-    background: "#FF0000",
-  };
-
+const HomeSection = () => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -21,15 +18,15 @@ const HomeSection = ({ img }) => {
         <img
           src={ZhyRille}
           alt="image"
-          className="img mt-20 flex items-center justify-center h-96 w-[600px]"
+          className="img mt-20 flex items-center justify-center h-[420px] w-[650px]"
+          data-aos="fade-right"
+          data-aos-duration="600"
+          data-aos-easing="ease-in-out"
+          data-aos-once="true"
+          data-aos-delay="400"
         />
         <div className="center-btn text-center mt-16">
-          <a
-            href="#"
-            className="btn inline-block py-3 px-10 text-sm font-semibold border-2 border-solid border-transparent rounded-md transition-all duration-200 ease-in cursor-pointer bg-amber-50 text-black capitalize hover:translate-x-3 hover:border-2 hover:border-solid hover:border-amber-50 hover:bg-transparent hover:text-amber-50"
-          >
-            book now
-          </a>
+          <BookModal />
         </div>
       </div>
     </section>

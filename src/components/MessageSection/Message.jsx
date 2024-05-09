@@ -2,21 +2,34 @@ import React from "react";
 import zhyMessage from "/assets/zhy.png";
 
 const Message = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="contact-body max-w-[1320px] my-0 mx-auto py-0 px-4 ">
       <hr className="my-0 h-0.5 border-t-0 bg-yellow-500 opacity-100 dark:opacity-50" />
-      <div className="contact-form py-8 px-0 border-t-2 border-black grid grid-cols-2 gap-8">
+      <div
+        className="contact-form py-8 px-0 border-t-2 border-black grid grid-cols-2 gap-8"
+        data-aos="fade-right"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+        data-aos-delay="400"
+      >
         <form>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             <input
               type="text"
               className="form-control w-full border-2 border-solid border-black rounded-md p-3 my-2 text-sm outline-0"
               placeholder="First Name"
+              required
             />
             <input
               type="text"
               className="form-control w-full border-2 border-solid border-black rounded-md p-3 my-2 text-sm outline-0"
               placeholder="Last Name"
+              required
             />
           </div>
 
@@ -25,6 +38,7 @@ const Message = () => {
               type="number"
               className="form-control w-full border-2 border-solid border-black rounded-md p-3 my-2 text-sm outline-0 text-black"
               placeholder="Phone"
+              required
             />
           </div>
 
@@ -32,6 +46,7 @@ const Message = () => {
             rows="5"
             className="form-control w-full border-2 border-solid border-black rounded-md p-3 my-2 text-sm outline-0"
             placeholder="Message"
+            required
           ></textarea>
 
           <input
@@ -41,7 +56,14 @@ const Message = () => {
           />
         </form>
 
-        <div className="flex justify-end items-center pr-4">
+        <div
+          className="flex justify-end items-center pr-4"
+          data-aos="fade-left"
+          data-aos-duration="400"
+          data-aos-easing="ease-in-out"
+          data-aos-once="true"
+          data-aos-delay="300"
+        >
           <img
             src={zhyMessage}
             alt="zhycontactimage"

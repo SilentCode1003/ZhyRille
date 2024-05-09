@@ -83,7 +83,7 @@ const Nav = () => {
           {isNav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
         </div>
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-5 absolute md:static md:z-auto -z-10 left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in capitalize text-center py-0 px-24 ${
+          className={`md:flex md:items-center md:pb-0 pb-5 absolute md:static md:z-auto -z-10 left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in capitalize text-center py-0 sm:px-24 px-7 ${
             isNav ? "top-20" : "top-[-490px]"
           }`}
           style={dropdownStyle}
