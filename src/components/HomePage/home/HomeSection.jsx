@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import ZhyRille from "../../../assets/logo.png";
+import ZhyRille from "/assets/logo.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BookModal from "../../Booking/BookModal";

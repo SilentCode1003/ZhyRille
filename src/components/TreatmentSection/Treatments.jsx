@@ -4,8 +4,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { TECarousel, TECarouselItem } from "tw-elements-react";
 
-import massage from "../../assets/oilbased.jpg";
-import img from "../../assets/mema.jpg";
+import massage from "/assets/oilbased.jpg";
+import img from "/assets/mema.jpg";
 
 const Treatments = () => {
   const styles = {

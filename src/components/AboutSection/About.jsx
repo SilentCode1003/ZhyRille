@@ -2,9 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import zhyrille from "../../assets/zhyrille.png";
-import massage from "../../assets/oilbased.jpg";
-import AboutModal from "./AboutModal";
+import massage from "/assets/oilbased.jpg";
 
 const About = () => {
   useEffect(() => {

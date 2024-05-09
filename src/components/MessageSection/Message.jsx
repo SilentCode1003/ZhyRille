@@ -1,8 +1,5 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-import zhyMessage from "../../assets/zhy.png";
+import React from "react";
+import zhyMessage from "/assets/zhy.png";
 
 const Message = () => {
   useEffect(() => {
