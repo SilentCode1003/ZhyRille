@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-import zhy from "../../assets/back massage.jpg";
+import zhy from "/assets/back massage.jpg";
 
 const BookForm = () => {
   const styles = {
