@@ -63,7 +63,7 @@ const TreatmentModal = (props) => {
               </TEModalHeader>
               {/* <!--Modal body--> */}
               <TEModalBody className="bg-stone-950 border-solid boder-2 border-amber-50 text-amber-50">
-                Content Here.
+                <img src={props.price} alt="No Image" />
               </TEModalBody>
             </TEModalContent>
           </TEModalDialog>

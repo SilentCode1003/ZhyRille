@@ -11,17 +11,7 @@ const AboutModalcontent = () => {
             ZhyRille wellness spa
           </h5>
           <p className="about-content leading-7 text-justify text-sm tracking-wide text-amber-50">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iure
-            et distinctio suscipit, eveniet, commodi laboriosam ipsam quibusdam
-            at, eius quo temporibus culpa aliquid dicta necessitatibus earum
-            nulla ea magni eos harum praesentium illum. Dolorum mollitia facilis
-            ad quos iste eveniet laborum libero laudantium ut! Id asperiores
-            laboriosam esse iure tempore, dignissimos officia a consequuntur
-            saepe iusto quod beatae ut adipisci quisquam ipsum facilis quaerat
-            ad sed unde, odio, iste non veniam. At exercitationem, similique
-            necessitatibus reiciendis quis neque assumenda optio expedita iusto
-            inventore fugit mollitia consequuntur! Odio, ab ipsum distinctio rem
-            ratione voluptates tenetur velit id optio modi aliquid.
+            Established in the year 2024, first branch is located in Pacita Complex
           </p>
         </div>
         <img

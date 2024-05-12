@@ -6,6 +6,17 @@ import { TECarousel, TECarouselItem } from "tw-elements-react";
 
 import massage from "/assets/oilbased.jpg";
 import img from "/assets/mema.jpg";
+import skinrejuvenation from "/assets/skinrejuvenation.jpg";
+import bodycare from "/assets/bodycare.jpg";
+import facialcare from "/assets/facialcare.jpg";
+import hairremoval from "/assets/hairremoval.jpg";
+import hairtreatement from "/assets/hairtreatment.jpg";
+import handfootcare from "/assets/handfootcare.jpg";
+import lashcare from "/assets/lashcare.jpg";
+import massageservices from "/assets/massageservices.jpg";
+import slimmingservices from "/assets/slimmingservices.jpg";
+import semipermanentmakeup from "/assets/semipermanentmakeup.jpg";
+import whiteningtreatment from "/assets/whiteningtreatement.jpg";
 
 const Treatments = () => {
   const styles = {
@@ -45,46 +56,52 @@ const Treatments = () => {
           >
             <div className="tour-content my-16 sm:ml-12 grid grid-cols-3 items-center gap-12 ">
               <TreatmentModal
-                image={massage}
+                image={img}
                 title="Skin Rejuvenation"
                 modalTitle="Hair Removal Services"
                 modalContent="This is the content of the modal."
                 modalHeader="Skin Rejuvenation"
+                price={skinrejuvenation}
               />
               <TreatmentModal
-                image={massage}
+                image={img}
                 title="Whitening Treatment"
                 modalTitle="Hair Removal Services"
                 modalContent="This is the content of the modal."
                 modalHeader="Whitening Treatment"
+                price={whiteningtreatment}
               />
               <TreatmentModal
-                image={massage}
+                image={img}
                 title="Facial Care"
                 modalTitle="Hair Removal Services"
                 modalContent="This is the content of the modal."
                 modalHeader="Facial Care"
+                price={hairtreatement}
               />
               <TreatmentModal
-                image={massage}
+                image={img}
                 title="Zhyrille Ultimate Package"
                 modalTitle="Hair Removal Services"
                 modalContent="This is the content of the modal."
                 modalHeader="ZhyRille Ultimate Package"
+                price={img}
               />
               <TreatmentModal
-                image={massage}
+                image={img}
                 title="Hair Removal"
                 modalTitle="Hair Removal Services"
                 modalContent="This is the content of the modal."
                 modalHeader="Hair Removal"
+                price={hairremoval}
               />
               <TreatmentModal
-                image={massage}
+                image={img}
                 title="Underarm Package"
                 modalTitle="Hair Removal Services"
                 modalContent="This is the content of the modal."
                 modalHeader="Underarm Package"
+                price={img}
               />
             </div>
           </TECarouselItem>
@@ -94,46 +111,52 @@ const Treatments = () => {
           >
             <div className="tour-content my-16 sm:ml-12 grid grid-cols-3 items-center gap-12">
               <TreatmentModal
-                image={massage}
+                image={img}
                 title="Massage Services"
                 modalTitle="Hair Removal Services"
                 modalContent="This is the content of the modal."
                 modalHeader="Massage Services"
+                price={massageservices}
               />
               <TreatmentModal
-                image={massage}
+                image={img}
                 title="Slimming Services"
                 modalTitle="Hair Removal Services"
                 modalContent="This is the content of the modal."
                 modalHeader="Slimming Services"
+                price={slimmingservices}
               />
               <TreatmentModal
-                image={massage}
+                image={img}
                 title="Body Care"
                 modalTitle="Hair Removal Services"
                 modalContent="This is the content of the modal."
                 modalHeader="Body Care"
+                price={bodycare}
               />
               <TreatmentModal
-                image={massage}
+                image={img}
                 title="Lash Care"
                 modalTitle="Hair Removal Services"
                 modalContent="This is the content of the modal."
                 modalHeader="Lash Care"
+                price={lashcare}
               />
               <TreatmentModal
-                image={massage}
+                image={img}
                 title="Hand & Foot Care"
                 modalTitle="Hair Removal Services"
                 modalContent="This is the content of the modal."
                 modalHeader="Hand & Foot Care"
+                price={handfootcare}
               />
               <TreatmentModal
-                image={massage}
+                image={img}
                 title="Semi Permanent Make Up"
                 modalTitle="Hair Removal Services"
                 modalContent="This is the content of the modal."
                 modalHeader="Semi Permanent Make Up"
+                price={semipermanentmakeup}
               />
             </div>
           </TECarouselItem>

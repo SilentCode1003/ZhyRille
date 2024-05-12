@@ -48,9 +48,7 @@ const About = () => {
           />
         </h2>
         <p className="text-sm font-medium leading-7 text-gray-300 mb-[35px]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ex
-          eum vitae dolorum aliquam veniam tempora, asperiores dolorem
-          voluptates reprehenderit rem totam blanditiis, sequi labore!
+          ZhyRille Wellness Spa establish in the year 2024.
         </p>
         {/* About Content */}
         <AboutModal />
