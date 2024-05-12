@@ -1,6 +1,5 @@
-import React from "react";
-
-import massage from "../../assets/oilbased.jpg";
+import 'react'
+import massage from "/assets/oilbased.jpg";
 
 const AboutModalcontent = () => {
   return (

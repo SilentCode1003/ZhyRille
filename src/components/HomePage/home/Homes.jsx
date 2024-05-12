@@ -1,5 +1,5 @@
-import React from "react";
 import HomeSection from "./HomeSection";
+// import zhy from "../../../assets/bg.jpg";
 import zhy from "/assets/bg.jpg";
 import Nav from "../navbar/Nav";
 import zhyrille from "/assets/logo.png";

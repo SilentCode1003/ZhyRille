@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { TECarousel, TECarouselItem } from "tw-elements-react";
@@ -25,49 +25,51 @@ const Testimonial = () => {
           </h1>
         </section>
 
-        {/* <TECarousel showControls ride="carousel">
-          <div className="relative w-3/4 overflow-hidden after:clear-both after:block after:content-[''] mx-auto">
-            <TECarouselItem
-              itemID={1}
-              className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none text-xs text-amber-50"
-            >
-              <h3>Name here</h3>
-              <h4>Lorem ipsum dolor</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </TECarouselItem>
-            <TECarouselItem
-              itemID={2}
-              className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none text-xs text-amber-50"
-            >
-              <h3>Name here</h3>
-              <h4>Lorem ipsum dolor</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </TECarouselItem>
-            <TECarouselItem
-              itemID={3}
-              className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none text-xs text-amber-50"
-            >
-              <h3>Name here</h3>
-              <h4>Lorem ipsum dolor</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </TECarouselItem>
-          </div>
-        </TECarousel> */}
+        {
+          <TECarousel showControls ride="carousel">
+            <div className="relative w-3/4 overflow-hidden after:clear-both after:block after:content-[''] mx-auto">
+              <TECarouselItem
+                itemID={1}
+                className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none text-xs text-amber-50"
+              >
+                <h3>Name here</h3>
+                <h4>Lorem ipsum dolor</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </TECarouselItem>
+              <TECarouselItem
+                itemID={2}
+                className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none text-xs text-amber-50"
+              >
+                <h3>Name here</h3>
+                <h4>Lorem ipsum dolor</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </TECarouselItem>
+              <TECarouselItem
+                itemID={3}
+                className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none text-xs text-amber-50"
+              >
+                <h3>Name here</h3>
+                <h4>Lorem ipsum dolor</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </TECarouselItem>
+            </div>
+          </TECarousel>
+        }
       </div>
     </div>
   );

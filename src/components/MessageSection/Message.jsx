@@ -1,9 +1,10 @@
-import React from "react";
+import { useEffect } from "react";
 import zhyMessage from "/assets/zhy.png";
+import Aos from "aos";
 
 const Message = () => {
   useEffect(() => {
-    AOS.init();
+    Aos.init();
   }, []);
 
   return (

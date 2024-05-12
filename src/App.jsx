@@ -1,4 +1,4 @@
-// import React from "react";
+import "react";
 import "./App.css";
 import HomePage from "./components/HomePage/home/Homes";
 import About from "./components/AboutSection/About";
